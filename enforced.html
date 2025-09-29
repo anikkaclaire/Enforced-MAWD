@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ENFORCED MAWD Project</title>
+		<link rel="stylesheet" href="enforced.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="enforced.js"></script>
+	</head>
+	<body>
+		<video class="background" autoplay muted loop>
+			<source src="Videos/Background.mp4" type="video/mp4">
+		</video>
+		<div class="bodyWrapper">
+			<nav>
+				<a href="#section1"><i class="fas fa-home"></i></a>
+				<a href="#section2"><i class="fas fa-user"></i></a>
+				<a href="#section3"><i class="fas fa-briefcase"></i></a>
+				<a href="#section4"><i class="fas fa-envelope"></i></a>
+			</nav>
+			<section id="section1">
+				<h1>Our Portfolio</h1>
+				<p>Progress bar</p>
+			</section>
+			<section id="section2">
+				<div class="sectionWrapper">
+					<div class="sectionItem">
+						<h2>Anikka's Skills</h2>
+						<p>HTML:</p>
+						<progress value="60" max="100"></progress>
+						<p>CSS:</p>
+						<progress value="80" max="100"></progress>
+						<p>Java:</p>
+						<progress value="90" max="100"></progress>
+					</div>
+					<div class="sectionItem">
+						<h2>Gabriel's Skills</h2>
+						<p>HTML:</p>
+						<progress value="80" max="100"></progress>
+						<p>CSS:</p>
+						<progress value="50" max="100"></progress>
+						<p>Java:</p>
+						<progress value="20" max="100"></progress>
+					</div>
+					<div class="sectionItem">
+						<h2>James's Skills</h2>
+						<p>HTML:</p>
+						<progress value="93" max="100"></progress>
+						<p>CSS:</p>
+						<progress value="90" max="100"></progress>
+						<p>Java:</p>
+						<progress value="70" max="100"></progress>
+					</div>
+					<div class="sectionItem">
+						<h2>Ian's Skills</h2>
+						<p>HTML:</p>
+						<progress value="86" max="100"></progress>
+						<p>CSS:</p>
+						<progress value="67" max="100"></progress>
+						<p>Java:</p>
+						<progress value="38" max="100"></progress>
+					</div>
+				</div>
+			</section>
+			<section id="section3">
+				<h2>Profiles</h2>
+				<div class="profiles">
+					<div class="profileItem">
+						<img src="Images/Moonpie.jpeg" alt="Profile 1">
+						<p>Moonpie🍡</p>
+					</div>
+					<div class="profileItem">
+						<img src="Images/Gabriel.jpg" alt="Profile 2">
+						<p>Gabo🔥</p>
+					</div>
+					<div class="profileItem">
+						<img src="Images/James.jpg" alt="Profile 3">
+						<p>Zyraen🐻</p>
+					</div>
+					<div class="profileItem">
+						<img src="Images/Ian.jpeg" alt="Profile 4">
+						<p>Ian🎧</p>
+					</div>
+				</div>
+			</section>
+			<section id="section4">
+				<h2>Contact Me</h2>
+				<div class="search-container">
+					<input id="choice1" name="color" type="text" list="shape">
+					<datalist id="shape">
+						<option value="Anikka Claire Serrano"></option>
+						<option value="Gabriel Ordiales"></option>
+						<option value="James Bryan Marquez"></option>
+					</datalist>
+				</div>
+				<form>
+					<input type="text" placeholder="Full Name">
+					<input type="email" placeholder="Email">
+					<input type="url" placeholder="Website">
+					<input type="tel" placeholder="Phone">
+					<textarea placeholder="Message"></textarea>
+					<button type="submit">Send</button>
+				</form>
+			</section>
+		</div>
+		<footer>&copy; 2025 ENFORCED MAWD Project</footer>
+		
+	</body>
+</html>
