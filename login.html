@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MOONRU GAME</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<form>
+			<div class="loginPanel">
+				<img class="loginImages" src="Images/Mitsuri4.png" style="margin-top: -150px; margin-left: -230px;"/>
+				<img class="loginImages" src="Images/Zenitsu1.png" style="margin-top: -190px;"/>
+				<img class="loginBack" src="Images/Undobutton.png" onmouseenter="mouseEnter(this);" onmouseleave="mouseLeave(this);" 
+					onclick="window.location.href='index.html'">
+				<img class="loginHeaderIcon" src="Images/Account.png">
+				<br/>
+				<div class="fieldWrapper">
+					<img class="loginIcon" src="Images/Mail.png">
+					<input class="loginFields" type="text" id="email" name="email" placeholder="Email">
+					<p id="emailMessage" class="hidden">Not a valid Email</p>
+				</div>
+				<br/>
+				<div class="fieldWrapper">
+					<img class="loginIcon" src="Images/Call.png">
+					<input class="loginFields" type="text" id="phone" name="phone" placeholder="Phone Number">
+					<p id="phoneMessage" class="hidden">Not a valid Phone Number</p>
+				</div>
+				<p class="nameLabel">Enter your Name</p>
+				<div class="nameFieldWrapper">
+					<input class="loginFields" type="text" id="username" name="username" placeholder="Full Name">
+				</div>
+				<img class="loginImages" src="Images/Rengoku.png" style="margin-top: -180px;">
+				<img class="loginButton" src="Images/Nexticon.png" onclick="validateFields();" onmouseenter="mouseEnter(this);" onmouseleave="mouseLeave(this);">
+				<p id="errorMessage" class="hidden">Please complete your details.</p>
+			</div>
+			<img class="loginImages" src="Images/Nezuko.png" style="float: right; margin-top: -400px;">
+		</form>
+	</body>
+</html>

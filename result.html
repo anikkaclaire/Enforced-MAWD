@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MOONRU GAME</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+    <div class="finalHeader">
+		 <img class="finalImages" src="Images/Mitsuri1.png">
+     <p class="finalHeaderText">OVERALL RESULT</p>
+     </div>
+		<div class="finalWrapper">
+      <progress id="percentage" class="finalPercentage" min="0" max="100" value="75"></progress>
+			<p id="score" class="finalScore"></p>
+		</div>
+		<img class="finalImages bottomImage" src="Images/Mitsuri2.png">
+		<script>
+			window.onload = function() {
+				const urlParams = new URLSearchParams(window.location.search);
+				const score = urlParams.get('score');
+				const percentage = urlParams.get('percentage');
+				if (!score || !percentage){
+					window.location.href='index.html';
+				}
+        document.getElementById("percentage").value = percentage.toString();
+        document.getElementById("score").innerHTML = score.toString() + " / 4";
+			}
+		</script>
+	</body>
+</html>

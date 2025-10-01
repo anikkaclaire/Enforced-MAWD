@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MOONRU GAME</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="mainWrapper">
+			<div class="mainShapeWrapper">
+				<br/>
+				<div id="1" class="shapeWrapper active">
+					<svg width="500" height="500">
+						<circle cx="50%" cy="50%" r="250" fill="red" stroke="white" stroke-width="3"/>
+					</svg>
+					<br/><br/><br/>
+					<label class="inputLabel" for="shape">Shape</label>
+					<input id="shape" class="inputField" type="text" list="shapeList">
+					<datalist id="shapeList">
+						<option value="Heart"></option>
+						<option value="Circle"></option>
+						<option value="Star"></option>
+						<option value="Rectangle"></option>
+						<option value="Square"></option>
+					</datalist>
+					<br/><br/>
+					<label class="inputLabel" for="color">Color</label>
+					<input id="color" class="inputField" type="text" list="colorList">
+					<datalist id="colorList">
+						<option value="Blue"></option>
+						<option value="Violet"></option>
+						<option value="Red"></option>
+						<option value="Green"></option>
+						<option value="Pink"></option>
+					</datalist>
+				</div>
+				<div id="2" class="shapeWrapper">
+					<svg width="500" height="500">
+						<rect x="25" y="100" width="450" height="300" fill="blue" stroke="white" stroke-width="3"/>
+					</svg>
+					<br/><br/><br/>
+					<label class="inputLabel" for="shape">Shape</label>
+					<input id="shape" class="inputField" type="text" list="shapeList">
+					<datalist id="shapeList">
+						<option value="Heart"></option>
+						<option value="Circle"></option>
+						<option value="Star"></option>
+						<option value="Rectangle"></option>
+						<option value="Square"></option>
+					</datalist>
+					<br/><br/>
+					<label class="inputLabel" for="color">Color</label>
+					<input id="color" class="inputField" type="text" list="colorList">
+					<datalist id="colorList">
+						<option value="Blue"></option>
+						<option value="Violet"></option>
+						<option value="Red"></option>
+						<option value="Green"></option>
+						<option value="Pink"></option>
+					</datalist>
+				</div>
+				<div id="3" class="shapeWrapper">
+					<svg width="500" height="500">
+						<rect x="25" y="25" width="450" height="450" fill="pink" stroke="white" stroke-width="3"/>
+					</svg>
+					<br/><br/><br/>
+					<label class="inputLabel" for="shape">Shape</label>
+					<input id="shape" class="inputField" type="text" list="shapeList">
+					<datalist id="shapeList">
+						<option value="Heart"></option>
+						<option value="Circle"></option>
+						<option value="Star"></option>
+						<option value="Rectangle"></option>
+						<option value="Square"></option>
+					</datalist>
+					<br/><br/>
+					<label class="inputLabel" for="color">Color</label>
+					<input id="color" class="inputField" type="text" list="colorList">
+					<datalist id="colorList">
+						<option value="Blue"></option>
+						<option value="Violet"></option>
+						<option value="Red"></option>
+						<option value="Green"></option>
+						<option value="Pink"></option>
+					</datalist>
+				</div>
+				<div id="4" class="shapeWrapper">
+					<svg width="500" height="500" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
+						<polygon points="100,10 40,198 190,78 10,78 160,198" fill="green" stroke="white" stroke-width="3"/>
+					</svg>
+					<br/><br/><br/>
+					<label class="inputLabel" for="shape">Shape</label>
+					<input id="shape" class="inputField" type="text" list="shapeList">
+					<datalist id="shapeList">
+						<option value="Heart"></option>
+						<option value="Circle"></option>
+						<option value="Star"></option>
+						<option value="Rectangle"></option>
+						<option value="Square"></option>
+					</datalist>
+					<br/><br/>
+					<label class="inputLabel" for="color">Color</label>
+					<input id="color" class="inputField" type="text" list="colorList">
+					<datalist id="colorList">
+						<option value="Blue"></option>
+						<option value="Violet"></option>
+						<option value="Red"></option>
+						<option value="Green"></option>
+						<option value="Pink"></option>
+					</datalist>
+				</div>
+				<div class="buttonWrapper">
+					<img id="prev" class="progressButton inactive" src="Images/Undo button.png" onclick="prev();" style="float: left;">
+					<img id="next" class="progressButton active-inline" src="Images/Button.png" onclick="next();" style="float: right;">
+					<img id="complete" class="progressButton inactive" src="Images/Button.png" onclick="finish();" style="float: right;">
+				</div>
+			</div>
+			<div class="progressWrapper">
+				<p class="nameDisplay">Name: </p>
+				<p id="nameText" class="nameDisplay"></p>
+				<br/>
+				<p id="emailText" class="personalDetails"></p>
+				| 
+				<p id="phoneText" class="personalDetails"></p>
+				<br/><br/><br/>
+				<p class="progressText">Your Progress:</p>
+				<progress id="progressBar" min="0" max="100"></progress>
+				<p id="progressValue" class="progressText">0%</p>
+				<br/><br/>
+				<img id="resultButton" class="resultButton inactive" src="Images/Complete.png" onclick="viewResult();">
+			</div>
+		</div>
+		<script>
+			window.onload = function() {
+				const urlParams = new URLSearchParams(window.location.search);
+				const name = urlParams.get('name');
+				const email = urlParams.get('email');
+				const phone = urlParams.get('phone');
+				if (!name || !email || !phone){
+					window.location.href='index.html';
+				}
+			
+				document.getElementById("nameText").innerHTML = name;
+				document.getElementById("emailText").innerHTML = email;
+				document.getElementById("phoneText").innerHTML = phone;
+			}
+		</script>
+	</body>
+</html>

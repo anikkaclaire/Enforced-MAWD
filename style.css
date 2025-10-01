@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "archivo";
+    src: url("Fonts/ArchivoBlack-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+html {
+    background-image: linear-gradient(to top, #65C18C, #FF7BA9);
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.indexImage {
+    height: 400px;
+    width: 400px;
+}
+
+.startButton {
+    height: 270px;
+    width: 270px;
+    margin-top: -50px;
+}
+
+.startButtonHover {
+    height: 290px;
+    width: 290px;
+    margin-top: -50px;
+}
+
+.topLeft {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bottomRight {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.indexWrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 23%;
+   
+}
+
+.titleText{
+    font-size: 130px;
+    background-image: linear-gradient(to top, #084823, #c7386a);
+    color: transparent;
+    background-clip: text;
+    text-shadow: 2px 4px 4px white;
+}
+
+.loginHeaderIcon {
+    position: absolute;
+    display: block;
+    height: 250px;
+    width: 250px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -280px;
+}
+
+.loginIcon {
+    margin-left: 60px;
+    height: 90px;
+    width: 90px;
+}
+
+
+.loginFields {
+    height: 55px;
+    width:500px;
+    font-size: 25px;
+    margin-left: 20px;
+    border-radius: 30px;
+    border-color: #ffaccc;
+    background-color: #e1feb7;
+    padding: 5px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.loginFields::placeHolder {
+    color: grey;
+}
+
+.loginPanel {
+    background-color: rgba(255, 255, 255, 0.349);
+    height: 600px;
+    width: 1000px;
+    margin: 10% auto;
+    border-radius: 30px;
+    border-width: 10px;
+    border: 2px solid white;
+    box-shadow: inset 0 0 20px white, inset 0 0 40px white;
+
+    
+}
+
+.fieldWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 120px;
+}
+
+.nameLabel {
+    text-align: center;
+    font-size: 50px;
+    font-family: "archivo";
+    color: #060606;
+    margin: 0;
+    margin-left: 85px;
+    margin-top: 10px;
+    
+}
+
+.loginButton {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-right: 40px;
+    margin-top: -30px;
+    float: right;
+
+}
+
+.loginBack {
+    width: 150px;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: -310px;
+}
+
+.nameFieldWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 270px;
+    margin-top: 20px;
+    
+}
+
+.fieldError {
+    border-color: rgb(255, 0, 0);
+}
+
+.errorMessage {
+    color: red;
+    text-align: center;
+    font-size: 35px;
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.hidden {
+    display: none;
+}
+
+.validationMessage {
+    color: red;
+    display: block;
+    margin: 5px;
+}
+
+.loginImages {
+    height: 285px;
+    width: 285px;
+    display: block;
+    float: left;
+}
+
+.mainWrapper {
+    display: flex;
+    width: 100%;
+}
+
+.mainShapeWrapper {
+    width: 50%;
+}
+
+.shapeWrapper {
+    text-align: center;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.active-inline {
+    display: inline-block;
+}
+
+.inactive {
+    display: none;
+}
+
+.progressButton {
+    width: 50px;
+    height: 50px;
+}
+
+.inputLabel {
+    display: inline-block;
+    width: 50px;
+    text-align: left;
+}
+
+.inputField {
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+}
+
+.buttonWrapper {
+    width: 45%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.progressWrapper {
+    margin:auto;
+    margin-top: 200px;
+}
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #c37693;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #c37693;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #85c922;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+progress::-moz-progress-bar {
+    background-color: #85c922;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+#progressValue{
+    text-align: right;
+}
+
+.nameDisplay {
+    display: inline;
+    font-size: 30px;
+}
+
+.resultButton {
+    width: 450px;
+    height: 150px;
+}
+
+.personalDetails {
+    display: inline;
+}
+
+.finalPercentage {
+    width: 500px;
+    height: 100px;
+}
+
+.finalImages {
+    width: 300px;
+    height: 300px;
+}
+
+.finalWrapper {
+   margin: auto;
+   width: 35%;
+}
+
+.finalHeader {
+    font-size: 70px;
+    display: flex;
+}
+
+.finalHeaderText {
+    margin-left: 110px;
+    font-family: "archivo";
+}
+
+.finalScore {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.bottomImage {
+    float: right;
+    margin-top: -50px;
+}
